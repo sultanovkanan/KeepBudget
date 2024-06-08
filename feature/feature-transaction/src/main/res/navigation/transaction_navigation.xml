@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/transaction_navigation"
+    app:startDestination="@id/transactionFragment">
+
+
+    <fragment
+        android:id="@+id/transactionFragment"
+        android:name="com.kanandev.feature_transaction.TransactionFragment"
+        android:label="fragment_transaction"
+        tools:layout="@layout/fragment_transaction">
+
+        <deepLink app:uri="android-app://com.kanandev.keepyourbudget/transactionFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/transactionDetailFragment"
+        android:name="com.kanandev.feature_transaction.TransactionDetailFragment"
+        android:label="fragment_transaction_detail"
+        tools:layout="@layout/fragment_transaction_detail">
+
+        <deepLink app:uri="android-app://com.kanandev.keepyourbudget/transactionDetailFragment" />
+    </fragment>
+
+</navigation>

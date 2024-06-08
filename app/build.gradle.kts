@@ -35,14 +35,20 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
     implementation(project(":core:core-common"))
     implementation(project(":core:core-data"))
     implementation(project(":core:core-domain"))
-    implementation(project(":feature:feature-home"))
+    implementation(project(":feature:feature-transaction"))
     implementation(project(":feature:feature-auth"))
+    implementation(project(":feature:feature-settings"))
+    implementation(project(":feature:feature-statistic"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

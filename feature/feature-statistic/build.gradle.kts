@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.kanandev.feature_auth"
+    namespace = "com.kanandev.feature_statistic"
     compileSdk = 34
 
     defaultConfig {
