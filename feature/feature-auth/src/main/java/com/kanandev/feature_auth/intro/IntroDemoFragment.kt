@@ -13,7 +13,7 @@ import com.kanandev.feature_auth.databinding.FragmentIntroDemoBinding
  * Use the [IntroDemoFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class IntroDemoFragment : Fragment() {
+class IntroDemoFragment : Fragment(){
 
     private var _binding: FragmentIntroDemoBinding? = null
     private val binding get() = _binding!!
@@ -38,6 +38,10 @@ class IntroDemoFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    fun getViewPager(): ViewPager2 {
+        return viewPager
     }
 
 }

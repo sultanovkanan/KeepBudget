@@ -8,4 +8,6 @@
     <string name="intro_third_screen_title">Strategize your future</string>
     <string name="intro_third_screen_desc">Setup your budget for each category so you are in control</string>
     <string name="done_btn">Done</string>
+    <string name="continue_btn">Continue</string>
+
 </resources>
